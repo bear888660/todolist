@@ -24,11 +24,15 @@ class TaskController extends Controller
     {
         $task = Task::create($request->all());
 
+
+        //test
+
         return response(new TaskResource($task), Response::HTTP_CREATED);
     }
 
     public function show(Task $task)
     {
+        //test
         return response(new TaskResource($task), Response::HTTP_OK);
     }
 
