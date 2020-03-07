@@ -25,7 +25,8 @@ class TaskController extends Controller
         $task = Task::create($request->all());
 
 
-        //test
+        //testono
+        //nono
 
         return response(new TaskResource($task), Response::HTTP_CREATED);
     }
@@ -33,6 +34,7 @@ class TaskController extends Controller
     public function show(Task $task)
     {
         //test
+        //nono
         return response(new TaskResource($task), Response::HTTP_OK);
     }
 
